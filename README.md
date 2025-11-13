@@ -48,11 +48,6 @@ Esta aplicação foi desenvolvida como um projeto prático para demonstrar conce
     mvn clean install
     ```
 
-4.  Execute a aplicação:
-    ```sh
-    java -jar target/dev-0.0.1-SNAPSHOT.jar
-    ```
-
 5.  Alternativamente, você pode executar a classe principal `com.music_api.dev.DevApplication` diretamente da sua IDE (IntelliJ).
 
 A aplicação estará disponível em `http://localhost:8080`.
