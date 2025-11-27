@@ -45,11 +45,9 @@ public class ArtistaService {
         if (generoFiltro != null && !generoFiltro.isBlank()) {
             artistas = artistaRepository.findByGeneroContainingIgnoreCase(generoFiltro, pageable);
         } else {
-            // Senão, busca todos (Aula 12) [cite: 1375]
             artistas = artistaRepository.findAll(pageable);
         }
 
-        // Converte a Página de Entidade para Página de DTO
         return artistas.map(this::toDTO);
     }
 
